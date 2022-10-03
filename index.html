@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c77019c43d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <form class="form">
+    <input type="text" id="input-add" class="form__input" autocomplete="off" placeholder="AGREGAR UNA TAREA">
+    <input type="submit" value="Agregar">
+  </form>
+  <section class="task-container">
+    <h2 class="task__title">Tareas Pendientes</h2>
+    <div class="task">
+    </div>
+  </section>
+  <section class="modal-editar">
+    <i class="fa-solid fa-xmark cerrar-modal" id="cerrar-modal"></i>
+    <form class="modal__form">
+      <input type="text" class="modal__input form__input" placeholder="EDITAR">
+      <input type="submit" value="Editar" class="modal__btn" id="modal-btn">
+    </form>
+  </section>
+  <script src="./main.js"></script>
+</body>
+
+</html>
